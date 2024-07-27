@@ -713,18 +713,6 @@
       #experience {
         padding: 20px;
       }
-      /* Media query for small screens and printing */
-      @media only screen and (max-width: 768px), print {
-        .container {
-          display: block; /* Stack items vertically */
-        }
-
-        #pictureLeft,
-        #authorRight,
-        #experience {
-          width: 100%; /* Full width on small screens */
-        }
-      }
       .imgCustom {
         max-height: 600px;
         padding-top: 10px;
@@ -734,6 +722,21 @@
         margin-right: auto;
         display: block;
       }
+      /* Media query for small screens and printing */
+      @media only screen and (max-width: 768px), print {
+        .container {
+          display: block; /* Stack items vertically */
+        }
+        #pictureLeft,
+        #authorRight,
+        #experience {
+          width: 100%; /* Full width on small screens */
+        }
+        .imgCustom {
+          max-height: 300px;
+        }
+      }
+
       section {
         margin-bottom: 0.5rem;
       }
